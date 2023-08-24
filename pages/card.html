@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>IRLEN - Продукция шаблон</title>
+    </head>
+<body>
+    <!--header-->
+
+    <header class="header">
+        <div class="header__logo-wrap">
+            <a href="../index.html">
+                <img src="../images/icons/header-logo.png" alt="logo" class="header__logo-wrap__logo">
+            </a>
+        </div>
+        <div class="header__menu-wrap">
+            <div class="header__menu-wrap__catalog-wrap">
+                <button class="menu-wrap__catalog-wrap__btn" id="openCatalog">
+                    <div class="catalog-wrap__btn__burger">
+                        <span class="btn__burger__line" id="burgerLineOne"></span>
+                        <span class="btn__burger__line" id="burgerLineTwo"></span>
+                        <span class="btn__burger__line" id="burgerLineThree"></span>
+                    </div>
+                    каталог
+                </button>
+            </div>
+            <ul class="header__menu-wrap__menu-list">
+                <li class="menu-wrap__menu-list__item">
+                    <a href="#" class="menu-list__item__header-link">
+                        контакты
+                    </a>
+                </li>
+                <li class="menu-wrap__menu-list__item">
+                    <a href="#" class="menu-list__item__header-link">
+                        о компании
+                    </a>
+                </li>
+                <li class="menu-wrap__menu-list__item">
+                    <a href="#" class="menu-list__item__header-link">
+                        условия поставки
+                    </a>
+                </li>
+                <li class="menu-wrap__menu-list__item">
+                    <a href="#" class="menu-list__item__header-link">
+                        вакансии
+                    </a>
+                </li>
+            </ul>
+            <div class="header__menu-wrap__dropdown-menu">
+                <button class="dropdown-menu__dropbtn">
+                    меню
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-menu__dropdown-content">
+                    <a href="#" class="menu-list__item__header-link">
+                        контакты
+                    </a>
+                    <a href="#" class="menu-list__item__header-link">
+                        о компании
+                    </a>
+                    <a href="#" class="menu-list__item__header-link">
+                        условия поставки
+                    </a>
+                    <a href="#" class="menu-list__item__header-link">
+                        вакансии
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__btn-wrap">
+            <button class="header__button">
+                <div class="header__button__img-wrap">
+                    <img src="../images/icons/call-icon.svg" alt="phone" class="button__img-wrap__icon">
+                </div>
+                8(812) 921-22-99
+            </button>
+        </div>
+        <div class="header__mobile-burger-wrap">
+            <button class="header__mobile-burger-btn" id="burgerMobile">
+                <i class="fa fa-bars" id="burgerMobIcon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!--catalog-modal-->
+
+    <div class="catalog-modal" id="catalogModal">
+        <div class="catalog-modal__list container">
+            <div class="catalog-modal__item">
+                <img src="../images/catalog-item-one.png" alt="react" class="catalog-modal__item__img">
+                <div class="catalog-modal__item__content">
+                    <h2 class="catalog-modal__item__content__heading">Органические<br>реактивы</h2>
+                    <ul class="catalog-modal__item__content__list">
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="pages/product.html" class="catalog-modal__item__content__link">
+                                Органические растворители
+                            </a>
+                        </li>
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Органические кислоты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-modal__item">
+                <img src="../images/catalog-item-two.png" alt="react" class="catalog-modal__item__img">
+                <div class="catalog-modal__item__content">
+                    <h2 class="catalog-modal__item__content__heading">Неорганическая<br>химия</h2>
+                    <ul class="catalog-modal__item__content__list">
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Кислоты
+                            </a>
+                        </li>
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Оксиды
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-modal__item">
+                <img src="../images/catalog-item-three.png" alt="react" class="catalog-modal__item__img">
+                <div class="catalog-modal__item__content">
+                    <h2 class="catalog-modal__item__content__heading">Готовые химические<br>продукты</h2>
+                    <ul class="catalog-modal__item__content__list">
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Тефлон
+                            </a>
+                        </li>
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Клей
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--catalog-modal-->
+
+    <!--mobileMenu-->
+
+    <div class="mobileMenu">
+        <ul class="mobileMenu__list">
+            <li class="mobileMenu__list-catalog__item">
+                <h3>Каталог</h3>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <h4>Органические реактивы</h4>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Органические растворители
+                </a>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Органические кислоты
+                </a>
+            </li>
+        </ul>
+        <ul class="mobileMenu__list">
+            <li class="mobileMenu__list-catalog__item">
+                <h4>Неорганическая химия</h4>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Кислоты
+                </a>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Оксиды
+                </a>
+            </li>
+        </ul>
+        <ul class="mobileMenu__list">
+            <li class="mobileMenu__list-catalog__item">
+                <h4>Готовые химические продукты</h4>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Тефлон
+                </a>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Клей
+                </a>
+            </li>
+        </ul>
+        <ul class="mobileMenu__list">
+            <li class="mobileMenu__list__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    контакты
+                </a>
+            </li>
+            <li class="mobileMenu__list__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    о компании
+                </a>
+            </li>
+            <li class="mobileMenu__list__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    условия поставки
+                </a>
+            </li>
+            <li class="mobileMenu__list__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    вакансии
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--mobileMenu-->
+
+    <!--header-->
+
+    <!--card-->
+
+    <section class="section-card">
+        <div class="bg-white">
+            <div class="container">
+                <div class="section-card__preview">
+                    <div class="section-card__preview__wrap">
+                        <img src="../images/box-big.png" alt="card" class="section-card__preview__img">
+                    </div>
+                    <div class="section-card__preview__wrap">
+                        <h1>Ацетилацетон</h1>
+                        <p>acetylacetone</p>
+                        <p><strong>С5Н8О2 (C₅H₈O₂)</strong></p>
+                        <p>ТН ВЭД: 2914199000</p>
+                        <p>CAS № 123-54-6</p>
+                        <h2>Синонимы:</h2>
+                        <p>Диацетилметан, Пентан-2,4-дион, Ацетилацетонат, Ацетил-2-пропанон, Ацетоацетон</p>
+                        <h2>Описание вещества:</h2>
+                        <p>Бесцветная жидкость с запахом ацетона и уксусной кислоты.
+                            Является прекурсором для синтеза ацетилацетонатов.</p>
+                        <h2>Области применения</h2>
+                        <ul class="section-card__preview__list">
+                            <li>
+                                <p>Химическая промышленность</p>
+                            </li>
+                            <li>
+                                <p>Производство гербицидов, фунгицидов, инсектицидов</p>
+                            </li>
+                            <li>
+                                <p>Средства против коррозии</p>
+                            </li>
+                            <li>
+                                <p>Катализатор в нефтеперерабатывающей индустрии</p>
+                            </li>
+                            <li>
+                                <p>Фармацевтика</p>
+                            </li>
+                            <li>
+                                <p>Аналитическая химия</p>
+                            </li>
+                            <li>
+                                <p>Жидкостная хромотография, радиохимия</p>
+                            </li>
+                            <li>
+                                <p>Спектрофотометрия</p>
+                            </li>
+                            <li>
+                                <p>Производство препаратов от диареи.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-card__preview__description-min">
+                        <a href="#" class="section-sertificate__link">
+                            <span>к каталогу</span>
+                            <svg class="section-sertificate__link-arrow" width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.425 24.2969C23.3 24.3469 23.1875 24.3719 23.0625 24.3719H10.225C9.7125 24.3719 9.2875 23.9469 9.2875 23.4344C9.2875 22.9219 9.7125 22.4969 10.225 22.4969H20.8L4.9 6.59689C4.5375 6.23439 4.5375 5.63439 4.9 5.27189C5.2625 4.90939 5.8625 4.90939 6.225 5.27189L22.125 21.1719V10.5969C22.125 10.0844 22.55 9.65939 23.0625 9.65939C23.575 9.65939 24 10.0844 24 10.5969V23.4344C24 23.5594 23.975 23.6719 23.925 23.7969C23.8375 24.0219 23.65 24.2094 23.425 24.2969Z" fill="#0D1622"></path>
+                            </svg>
+                        </a>
+                        <h2>Евросоюз, Китай</h2>
+                        <p>Пластиковые бочки по 200кг</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-card__character">
+            <div class="section-card__character__list-wrapper">
+                <ul class="section-card__character__list">
+                    <li class="section-card__characher__item">
+                        <h2>Наименование показателя</h2>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>ДМФ</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Цветность</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Диметиламин</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Муравьиная кислота</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Метанол</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Вода</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Электропроводность (20°C)</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>рН ( 20% водный раствор при 25°C ±0,5)</p>
+                    </li>
+                </ul>
+                <ul class="section-card__character__list">
+                    <li class="section-card__characher__item">
+                        <h2>Лимиты</h2>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Мин. 99.90 %частиц</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Макс. 10 APHA</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Макс. 10 ppm</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Макс. 3 ppm</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Макс. 0,0050 %</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Макс. 0,03 %</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Макс. 2,5 μS/cm</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>6,5-8,5</p>
+                    </li>
+                </ul>
+                <ul class="section-card__character__list">
+                    <li class="section-card__characher__item">
+                        <h2>Метод тестирования</h2>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>GC</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Колориметрия</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Титрование</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Титрование</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>GC</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Карл Фишер</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>Кондуктометрия</p>
+                    </li>
+                    <li class="section-card__characher__item">
+                        <p>рН</p>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="section-card__characher__sertificate-link">
+                <img src="../images/icons/pdf-icon.svg" alt="sertificate" class="section-card__characher__sertificate-img">
+                <span>Certificate of Analysis</span>
+                <svg class="section-card__characher__arrow" width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.425 24.2969C23.3 24.3469 23.1875 24.3719 23.0625 24.3719H10.225C9.7125 24.3719 9.2875 23.9469 9.2875 23.4344C9.2875 22.9219 9.7125 22.4969 10.225 22.4969H20.8L4.9 6.59689C4.5375 6.23439 4.5375 5.63439 4.9 5.27189C5.2625 4.90939 5.8625 4.90939 6.225 5.27189L22.125 21.1719V10.5969C22.125 10.0844 22.55 9.65939 23.0625 9.65939C23.575 9.65939 24 10.0844 24 10.5969V23.4344C24 23.5594 23.975 23.6719 23.925 23.7969C23.8375 24.0219 23.65 24.2094 23.425 24.2969Z" fill="#0D1622"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="section-card__banner-wrapper">
+            <div class="section-card__banner">
+                <article class="section-card__banner-article">
+                    <h1>Условия поставки</h1>
+                    <p>Цена на продукцию – договорная (по запросу) и зависит объема и условий поставки. 
+                        Работаем по полной или частичной предоплате
+                        Отгрузка производится по всей России со складов в Москве и Санкт-Петербурге. 
+                        Оказываем профессиональные услуги по логистике и ВЭД. </p>
+                    <a href="#" class="section-card__banner-btn">
+                        отправить запрос
+                    </a>
+                </article>
+                <div class="section-card__banner__wrap">
+                    <div class="section-card__banner__block">
+                        <div class="section-card__banner__text-wrap">
+                            <div></div>
+                            <h2>Доставка заказов напрямую 
+                                из Европы и Китая</h2>
+                        </div>
+                        <div class="section-card__banner__text-wrap">
+                            <div></div>
+                            <h2>Передача груза на нашем 
+                                складе 
+                                по договору купли-продажи</h2>
+                        </div>
+                    </div>
+                    <div class="section-card__banner__text-wrap">
+                        <div></div>
+                        <h2>Страхование груза</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="#" class="section-card__avito-banner">
+                <img src="../images/avito-banner.jpg" alt="avito-logo">
+                <h2>Нашу продукцию моожно преобрести через сервисы Авито</h2>
+                <svg class="section-card__avito-banner-arrow" width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.425 24.2969C23.3 24.3469 23.1875 24.3719 23.0625 24.3719H10.225C9.7125 24.3719 9.2875 23.9469 9.2875 23.4344C9.2875 22.9219 9.7125 22.4969 10.225 22.4969H20.8L4.9 6.59689C4.5375 6.23439 4.5375 5.63439 4.9 5.27189C5.2625 4.90939 5.8625 4.90939 6.225 5.27189L22.125 21.1719V10.5969C22.125 10.0844 22.55 9.65939 23.0625 9.65939C23.575 9.65939 24 10.0844 24 10.5969V23.4344C24 23.5594 23.975 23.6719 23.925 23.7969C23.8375 24.0219 23.65 24.2094 23.425 24.2969Z" fill="#0D1622"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!--card-->
+
+    <!--contact-->
+
+    <section class="section-contact container">
+        <article class="section-contact__article">
+            <h1>Свяжитесь<br>с нами</h1>
+            <h2>Закажите обратный звонок</h2>
+            <p>Для того чтобы узнать цены, условия поставки или заказать Диметилформамид в Санкт-Петербурге, свяжитесь с нами через форму на сайте, по телефону или электронной почте.</p>
+        </article>
+        <form class="section-contact__form" action="#" method="post">
+            <label for="nameForm" class="section-contact__form__label">
+                Ваше имя
+            </label>
+            <input class="form-input" type="text" name="name" id="nameForm" placeholder="введите имя" autocomplete="on" required>
+            <label for="emailForm" class="section-contact__form__label">
+                Ваш Email
+            </label>
+            <input class="form-input" type="email" name="email" id="emailForm" placeholder="введите Email" autocomplete="on">
+            <label for="telForm" class="section-contact__form__label">
+                Ваш телефон
+            </label>
+            <input class="form-input" type="tel" name="tel" id="telForm" placeholder="введите телефон" autocomplete="on" required>
+            <input class="form-btn" type="button" value="Отправить запрос">
+        </form>
+    </section>
+
+    <div class="contact-info__wrapper">
+        <div class="container contact-container">
+            <div class="contact-info__block">
+                <h2>Офис</h2>
+                <a class="contact-info__block__content contact-info__block__content-geo" href="#">
+                    196158, г. Санкт-Петербург, Московское шоссе, д. 13, корп. 8, офис 80
+                </a>
+                <p class="contact-info__block__content contact-info__block__content-geo">Все заявки обрабатываются по рабочим дням с 10:00 до 19:00 часов</p>
+            </div>
+            <div class="contact-info__block">
+                <h2>Контакты</h2>
+                <a class="contact-info__block__content contact-info__block__content-link" href="mailto:info@ppirlen.ru">
+                    info@ppirlen.ru
+                </a>
+                <a class="contact-info__block__content contact-info__block__content-link" href="tel:+78129201581">
+                    8(812) 920-15-81
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+
+    <!--maps-->
+
+    <div class="maps-container">
+        <div class="maps-wrap"></div>
+        <iframe class="yandex-maps" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7f683a5796271a0de6ac56b6c1e4d63e6491ca755273b6791287d011c05194b&amp;source=constructor" width="1280" height="700" frameborder="0"></iframe>
+    </div>
+
+    <!--maps-->
+
+    <!--footer-->
+
+    <footer class="footer">
+        <div class="container footer__wrap">
+            <div class="footer__catalog">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <h4>Органические реактивы</h4>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Органические растворители
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Органические кислоты
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <h4>Неорганическая химия</h4>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Кислоты
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Оксиды
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <h4>Готовые химические продукты</h4>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Тефлон
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Клей
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__item__link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item__link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item__link">
+                            Условия поставки
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item__link">
+                            Вакансии
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="tel:+78129212299" class="footer__link">
+                            <img src="../images/icons/call-icon.svg" alt="call" class="footer__link__icon">
+                            8 (812) 921-22-99
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="mailto:info@ppirlen.ru" class="footer__link">
+                            <img src="../images/icons/mail-icon.svg" alt="mail" class="footer__link__icon">
+                            info@ppirlen.ru
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="../images/icons/location-icon.svg" alt="local" class="footer__link__icon">
+                            Юридический адрес - 196158, Россия, г. Санкт-Петербург,
+    вн.тер.г. Муниципальный округ Звездное, Московское ш., д. 13, к. 8, Литера А, помещ. 8-Н, каб. 70
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Почтовый адрес - 196158, 
+                            г. Санкт-Петербург, Московское ш., д. 13, к. 8, Литера А, каб. 70
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        ООО "Промышленный Поставщик "ИРЛЕН" ИНН 7810749513
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--footer-->
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

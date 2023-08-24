@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="../styles/media.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>IRLEN - Продукция шаблон</title>
+    </head>
+<body>
+    <!--header-->
+
+    <header class="header">
+        <div class="header__logo-wrap">
+            <a href="../index.html">
+                <img src="../images/icons/header-logo.png" alt="logo" class="header__logo-wrap__logo">
+            </a>
+        </div>
+        <div class="header__menu-wrap">
+            <div class="header__menu-wrap__catalog-wrap">
+                <button class="menu-wrap__catalog-wrap__btn" id="openCatalog">
+                    <div class="catalog-wrap__btn__burger">
+                        <span class="btn__burger__line" id="burgerLineOne"></span>
+                        <span class="btn__burger__line" id="burgerLineTwo"></span>
+                        <span class="btn__burger__line" id="burgerLineThree"></span>
+                    </div>
+                    каталог
+                </button>
+            </div>
+            <ul class="header__menu-wrap__menu-list">
+                <li class="menu-wrap__menu-list__item">
+                    <a href="#" class="menu-list__item__header-link">
+                        контакты
+                    </a>
+                </li>
+                <li class="menu-wrap__menu-list__item">
+                    <a href="#" class="menu-list__item__header-link">
+                        о компании
+                    </a>
+                </li>
+                <li class="menu-wrap__menu-list__item">
+                    <a href="#" class="menu-list__item__header-link">
+                        условия поставки
+                    </a>
+                </li>
+                <li class="menu-wrap__menu-list__item">
+                    <a href="#" class="menu-list__item__header-link">
+                        вакансии
+                    </a>
+                </li>
+            </ul>
+            <div class="header__menu-wrap__dropdown-menu">
+                <button class="dropdown-menu__dropbtn">
+                    меню
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-menu__dropdown-content">
+                    <a href="#" class="menu-list__item__header-link">
+                        контакты
+                    </a>
+                    <a href="#" class="menu-list__item__header-link">
+                        о компании
+                    </a>
+                    <a href="#" class="menu-list__item__header-link">
+                        условия поставки
+                    </a>
+                    <a href="#" class="menu-list__item__header-link">
+                        вакансии
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__btn-wrap">
+            <button class="header__button">
+                <div class="header__button__img-wrap">
+                    <img src="../images/icons/call-icon.svg" alt="phone" class="button__img-wrap__icon">
+                </div>
+                8(812) 921-22-99
+            </button>
+        </div>
+        <div class="header__mobile-burger-wrap">
+            <button class="header__mobile-burger-btn" id="burgerMobile">
+                <i class="fa fa-bars" id="burgerMobIcon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!--catalog-modal-->
+
+    <div class="catalog-modal" id="catalogModal">
+        <div class="catalog-modal__list container">
+            <div class="catalog-modal__item">
+                <img src="../images/catalog-item-one.png" alt="react" class="catalog-modal__item__img">
+                <div class="catalog-modal__item__content">
+                    <h2 class="catalog-modal__item__content__heading">Органические<br>реактивы</h2>
+                    <ul class="catalog-modal__item__content__list">
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="pages/product.html" class="catalog-modal__item__content__link">
+                                Органические растворители
+                            </a>
+                        </li>
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Органические кислоты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-modal__item">
+                <img src="../images/catalog-item-two.png" alt="react" class="catalog-modal__item__img">
+                <div class="catalog-modal__item__content">
+                    <h2 class="catalog-modal__item__content__heading">Неорганическая<br>химия</h2>
+                    <ul class="catalog-modal__item__content__list">
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Кислоты
+                            </a>
+                        </li>
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Оксиды
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-modal__item">
+                <img src="../images/catalog-item-three.png" alt="react" class="catalog-modal__item__img">
+                <div class="catalog-modal__item__content">
+                    <h2 class="catalog-modal__item__content__heading">Готовые химические<br>продукты</h2>
+                    <ul class="catalog-modal__item__content__list">
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Тефлон
+                            </a>
+                        </li>
+                        <li class="catalog-modal__item__content__list__item">
+                            <a href="#" class="catalog-modal__item__content__link">
+                                Клей
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--catalog-modal-->
+
+    <!--mobileMenu-->
+
+    <div class="mobileMenu">
+        <ul class="mobileMenu__list">
+            <li class="mobileMenu__list-catalog__item">
+                <h3>Каталог</h3>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <h4>Органические реактивы</h4>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Органические растворители
+                </a>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Органические кислоты
+                </a>
+            </li>
+        </ul>
+        <ul class="mobileMenu__list">
+            <li class="mobileMenu__list-catalog__item">
+                <h4>Неорганическая химия</h4>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Кислоты
+                </a>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Оксиды
+                </a>
+            </li>
+        </ul>
+        <ul class="mobileMenu__list">
+            <li class="mobileMenu__list-catalog__item">
+                <h4>Готовые химические продукты</h4>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Тефлон
+                </a>
+            </li>
+            <li class="mobileMenu__list-catalog__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    Клей
+                </a>
+            </li>
+        </ul>
+        <ul class="mobileMenu__list">
+            <li class="mobileMenu__list__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    контакты
+                </a>
+            </li>
+            <li class="mobileMenu__list__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    о компании
+                </a>
+            </li>
+            <li class="mobileMenu__list__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    условия поставки
+                </a>
+            </li>
+            <li class="mobileMenu__list__item">
+                <a href="#" class="mobileMenu__list__item-link">
+                    вакансии
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--mobileMenu-->
+
+    <!--header-->
+
+    <!--products-->
+
+    <section class="section-catalog">
+        <div class="container">
+            <div class="section-catalog__list">
+                <div class="section-catalog__item">
+                    <a href="#" class="section-catalog__link">
+                        <div class="section-catalog__item__article">
+                            <span>CAS</span>
+                            <span>№ 123-54-6</span>
+                        </div>
+                        <img src="../images/box.png" alt="box" class="section-catalog__item__img">
+                        <div class="section-catalog__item__info-wrap">
+                            <h2 class="section-catalog__item__heading">
+                                Ацетилацетон
+                            </h2>
+                            <p class="section-catalog__item__himicat">
+                                C5H802 (C<sub>5</sub>H<sub>8</sub>O<sub>2</sub>)
+                            </p>
+                            <p class="section-catalog__item__desc">
+                                Пластиковые бочки по 200 кг
+                            </p>
+                        </div>
+                        <div class="section-catalog__item__plus-wrap">
+                            <svg class="section-catalog__item__plus-img" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 1" opacity="0.5">
+                                <path id="Vector 2" d="M1.18848 9L16.0638 9" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                <path id="Vector 3" d="M8.62598 1.5V16.5" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="section-catalog__item">
+                    <a href="#" class="section-catalog__link">
+                        <div class="section-catalog__item__article">
+                            <span>CAS</span>
+                            <span>№ 123-54-6</span>
+                        </div>
+                        <img src="../images/box-min.png" alt="box-min" class="section-catalog__item__img">
+                        <div class="section-catalog__item__info-wrap">
+                            <h2 class="section-catalog__item__heading">
+                                Ацетилацетон
+                            </h2>
+                            <p class="section-catalog__item__himicat">
+                                C5H802 (C<sub>5</sub>H<sub>8</sub>O<sub>2</sub>)
+                            </p>
+                            <p class="section-catalog__item__desc">
+                                Пластиковые бочки по 200 кг
+                            </p>
+                        </div>
+                        <div class="section-catalog__item__plus-wrap">
+                            <svg class="section-catalog__item__plus-img" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 1" opacity="0.5">
+                                <path id="Vector 2" d="M1.18848 9L16.0638 9" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                <path id="Vector 3" d="M8.62598 1.5V16.5" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="section-catalog__item">
+                    <a href="#" class="section-catalog__link">
+                        <div class="section-catalog__item__article">
+                            <span>CAS</span>
+                            <span>№ 123-54-6</span>
+                        </div>
+                        <img src="../images/box-min.png" alt="box-min" class="section-catalog__item__img">
+                        <div class="section-catalog__item__info-wrap">
+                            <h2 class="section-catalog__item__heading">
+                                Ацетилацетон
+                            </h2>
+                            <p class="section-catalog__item__himicat">
+                                C5H802 (C<sub>5</sub>H<sub>8</sub>O<sub>2</sub>)
+                            </p>
+                            <p class="section-catalog__item__desc">
+                                Пластиковые бочки по 200 кг
+                            </p>
+                        </div>
+                        <div class="section-catalog__item__plus-wrap">
+                            <svg class="section-catalog__item__plus-img" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 1" opacity="0.5">
+                                <path id="Vector 2" d="M1.18848 9L16.0638 9" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                <path id="Vector 3" d="M8.62598 1.5V16.5" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="section-catalog__item">
+                    <a href="#" class="section-catalog__link">
+                        <div class="section-catalog__item__article">
+                            <span>CAS</span>
+                            <span>№ 123-54-6</span>
+                        </div>
+                        <img src="../images/box-min.png" alt="box-min" class="section-catalog__item__img">
+                        <div class="section-catalog__item__info-wrap">
+                            <h2 class="section-catalog__item__heading">
+                                Ацетилацетон
+                            </h2>
+                            <p class="section-catalog__item__himicat">
+                                C5H802 (C<sub>5</sub>H<sub>8</sub>O<sub>2</sub>)
+                            </p>
+                            <p class="section-catalog__item__desc">
+                                Пластиковые бочки по 200 кг
+                            </p>
+                        </div>
+                        <div class="section-catalog__item__plus-wrap">
+                            <svg class="section-catalog__item__plus-img" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 1" opacity="0.5">
+                                <path id="Vector 2" d="M1.18848 9L16.0638 9" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                <path id="Vector 3" d="M8.62598 1.5V16.5" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="section-catalog__item">
+                    <a href="#" class="section-catalog__link">
+                        <div class="section-catalog__item__article">
+                            <span>CAS</span>
+                            <span>№ 123-54-6</span>
+                        </div>
+                        <img src="../images/box-min.png" alt="box-min" class="section-catalog__item__img">
+                        <div class="section-catalog__item__info-wrap">
+                            <h2 class="section-catalog__item__heading">
+                                Ацетилацетон
+                            </h2>
+                            <p class="section-catalog__item__himicat">
+                                C5H802 (C<sub>5</sub>H<sub>8</sub>O<sub>2</sub>)
+                            </p>
+                            <p class="section-catalog__item__desc">
+                                Пластиковые бочки по 200 кг
+                            </p>
+                        </div>
+                        <div class="section-catalog__item__plus-wrap">
+                            <svg class="section-catalog__item__plus-img" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 1" opacity="0.5">
+                                <path id="Vector 2" d="M1.18848 9L16.0638 9" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                <path id="Vector 3" d="M8.62598 1.5V16.5" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="section-catalog__item">
+                    <a href="#" class="section-catalog__link">
+                        <div class="section-catalog__item__article">
+                            <span>CAS</span>
+                            <span>№ 123-54-6</span>
+                        </div>
+                        <img src="../images/box.png" alt="box" class="section-catalog__item__img">
+                        <div class="section-catalog__item__info-wrap">
+                            <h2 class="section-catalog__item__heading">
+                                Ацетилацетон
+                            </h2>
+                            <p class="section-catalog__item__himicat">
+                                C5H802 (C<sub>5</sub>H<sub>8</sub>O<sub>2</sub>)
+                            </p>
+                            <p class="section-catalog__item__desc">
+                                Пластиковые бочки по 200 кг
+                            </p>
+                        </div>
+                        <div class="section-catalog__item__plus-wrap">
+                            <svg class="section-catalog__item__plus-img" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="Group 1" opacity="0.5">
+                                <path id="Vector 2" d="M1.18848 9L16.0638 9" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                <path id="Vector 3" d="M8.62598 1.5V16.5" stroke="#0D1622" stroke-width="2" stroke-linecap="round"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--products-->
+
+    <!--contact-->
+
+    <section class="section-contact container">
+        <article class="section-contact__article">
+            <h1>Свяжитесь<br>с нами</h1>
+            <h2>Закажите обратный звонок</h2>
+            <p>Для того чтобы узнать цены, условия поставки или заказать Диметилформамид в Санкт-Петербурге, свяжитесь с нами через форму на сайте, по телефону или электронной почте.</p>
+        </article>
+        <form class="section-contact__form" action="#" method="post">
+            <label for="nameForm" class="section-contact__form__label">
+                Ваше имя
+            </label>
+            <input class="form-input" type="text" name="name" id="nameForm" placeholder="введите имя" autocomplete="on" required>
+            <label for="emailForm" class="section-contact__form__label">
+                Ваш Email
+            </label>
+            <input class="form-input" type="email" name="email" id="emailForm" placeholder="введите Email" autocomplete="on">
+            <label for="telForm" class="section-contact__form__label">
+                Ваш телефон
+            </label>
+            <input class="form-input" type="tel" name="tel" id="telForm" placeholder="введите телефон" autocomplete="on" required>
+            <input class="form-btn" type="button" value="Отправить запрос">
+        </form>
+    </section>
+
+    <div class="contact-info__wrapper">
+        <div class="container contact-container">
+            <div class="contact-info__block">
+                <h2>Офис</h2>
+                <a class="contact-info__block__content contact-info__block__content-geo" href="#">
+                    196158, г. Санкт-Петербург, Московское шоссе, д. 13, корп. 8, офис 80
+                </a>
+                <p class="contact-info__block__content contact-info__block__content-geo">Все заявки обрабатываются по рабочим дням с 10:00 до 19:00 часов</p>
+            </div>
+            <div class="contact-info__block">
+                <h2>Контакты</h2>
+                <a class="contact-info__block__content contact-info__block__content-link" href="mailto:info@ppirlen.ru">
+                    info@ppirlen.ru
+                </a>
+                <a class="contact-info__block__content contact-info__block__content-link" href="tel:+78129201581">
+                    8(812) 920-15-81
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+
+    <!--maps-->
+
+    <div class="maps-container">
+        <div class="maps-wrap"></div>
+        <iframe class="yandex-maps" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7f683a5796271a0de6ac56b6c1e4d63e6491ca755273b6791287d011c05194b&amp;source=constructor" width="1280" height="700" frameborder="0"></iframe>
+    </div>
+
+    <!--maps-->
+
+    <!--footer-->
+
+    <footer class="footer">
+        <div class="container footer__wrap">
+            <div class="footer__catalog">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <h4>Органические реактивы</h4>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Органические растворители
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Органические кислоты
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <h4>Неорганическая химия</h4>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Кислоты
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Оксиды
+                        </a>
+                    </li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <h4>Готовые химические продукты</h4>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Тефлон
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__item__link" href="#">
+                            Клей
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#" class="footer__item__link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item__link">
+                            Контакты
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item__link">
+                            Условия поставки
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__item__link">
+                            Вакансии
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__contact">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="tel:+78129212299" class="footer__link">
+                            <img src="../images/icons/call-icon.svg" alt="call" class="footer__link__icon">
+                            8 (812) 921-22-99
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="mailto:info@ppirlen.ru" class="footer__link">
+                            <img src="../images/icons/mail-icon.svg" alt="mail" class="footer__link__icon">
+                            info@ppirlen.ru
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            <img src="../images/icons/location-icon.svg" alt="local" class="footer__link__icon">
+                            Юридический адрес - 196158, Россия, г. Санкт-Петербург,
+    вн.тер.г. Муниципальный округ Звездное, Московское ш., д. 13, к. 8, Литера А, помещ. 8-Н, каб. 70
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">
+                            Почтовый адрес - 196158, 
+                            г. Санкт-Петербург, Московское ш., д. 13, к. 8, Литера А, каб. 70
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        ООО "Промышленный Поставщик "ИРЛЕН" ИНН 7810749513
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--footer-->
+
+    <script src="../scripts/script.js"></script>
+</body>
+</html>
